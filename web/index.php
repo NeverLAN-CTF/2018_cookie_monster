@@ -1,9 +1,9 @@
 <?php
-if(array_key_exists("Yellow_Guy's_name", $_COOKIE)&&preg_match('/([Bb])(ig)\s([Bb])(ird)+/', $_COOKIE["Yellow_Guy's_name"])){
-  $output=('<p>You got it! flag{bigest_of_the_birds}</p>');
+if(array_key_exists("Red_Guy's_name", $_COOKIE)&&preg_match('/([Ee])lmo+/', $_COOKIE["Red_Guy's_name"])){
+  $output=('<p>You got it! flag{C00kies_4r3_the_b3st}</p>');
 }else{
-    $output = ("<p>He's my favorite Yellow guy</p>");
-    setcookie("Yellow_Guy's_name", 'Name', time()+300);
+    $output = ("<p>He's my favorite Red guy</p>");
+    setcookie("Red_Guy's_name", 'NameGoesHere', time()+300);
 }
 
 ?>
@@ -14,7 +14,7 @@ if(array_key_exists("Yellow_Guy's_name", $_COOKIE)&&preg_match('/([Bb])(ig)\s([B
     </head>
     <body>
     <?php
-    echo($output);    
+    echo($output);
     ?>
 </body>
 </html>
